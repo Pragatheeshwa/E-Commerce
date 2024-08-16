@@ -2,6 +2,7 @@ import React from 'react'
 import Search from './Search'
 import {Link} from 'react-router-dom'
 
+
 const Header = ({cartItem}) => {
   return (
    <>
@@ -9,7 +10,7 @@ const Header = ({cartItem}) => {
         <div className="col-12 col-md-3">
           <div className="navbar-brand">
             <Link to='/'>
-            <img width="90px" src="/images/logo.png" />
+            <img src="/images/logo.png" alt="logo" width={'120px'} />
             </Link>
           </div>
         </div>
@@ -23,7 +24,7 @@ const Header = ({cartItem}) => {
           
           <span id="cart" className="ml-3">
             Cart
-          </span>
+          </span> 
           <span className="ml-1" id="cart_count">
            {cartItem.length}
           </span>
